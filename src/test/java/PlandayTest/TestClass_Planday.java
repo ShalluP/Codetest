@@ -21,11 +21,7 @@ public String from_time="9:00";
 public String to_time="17:00";
 public String scheduleUrl="https://test1234.planday.com/schedule";
 
-	/*
-	 * public LoginPage_Planday loginPage_Planday = new LoginPage_Planday(); public
-	 * HomePage_Planday HomePage_Planday = new HomePage_Planday(); public
-	 * SchedulePage_Planday SchedulePage_Planday = new SchedulePage_Planday();
-	 */
+	
 @BeforeClass()
 public void initialiseDriver() {
 	driver = driverManager.initialiseDriver();
@@ -46,7 +42,7 @@ public void initialiseDriver() {
 
 	@Test(priority = 2) 
 	public void navigateToScheduleAndVerify() throws InterruptedException{
-//	driver = driverManager.initialiseDriver();
+
 	HomePage_Planday HomePage_Planday = new HomePage_Planday(driver);
 	HomePage_Planday.verifyHomepageIsDisplayed();
 	HomePage_Planday.clickOnSchedule();
@@ -56,7 +52,7 @@ public void initialiseDriver() {
 	
 	  @Test(priority = 3) public void createScheduleEntry() throws
 	  InterruptedException { 
-		  //driver = driverManager.initialiseDriver();
+		
 	  SchedulePage_Planday SchedulePage_Planday = new SchedulePage_Planday(driver);
 	  SchedulePage_Planday.switcToIframe();
 	  SchedulePage_Planday.verifyEmployeeCount();

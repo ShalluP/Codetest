@@ -11,8 +11,7 @@ public class HomePage_Planday extends BaseClass_Planday{
 	
 	public String urlSchedule;
 	
-	//WebDriverWait wait = new WebDriverWait(driver, 40);
-	
+		
 	public HomePage_Planday(WebDriver driver) {
 			super(driver);
 	}
@@ -33,7 +32,7 @@ public class HomePage_Planday extends BaseClass_Planday{
 	public void verifyScheduleUrl() {
 		urlSchedule = driver.getCurrentUrl();
 		System.out.println("The current title after schedule is : "+ urlSchedule);
-	//	Assert.assertTrue(urlSchedule.equalsIgnoreCase(scheduleUrl));
+	
 		}
 	
 	
